@@ -1,0 +1,91 @@
+<doctype>
+<html lang="en">
+<head>
+<meta ncharset="UTF-8">
+<title>FTTXProject Tracker</title>
+</head>
+   <style>
+  body{
+font-family:Ariel,sanserif;
+margin:0;
+padding:0;
+}
+
+#app{
+max-width: 800px;
+margin:20px auto;
+padding:20px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+header{
+text-align:center;
+margin-bottom:20px;
+}
+
+main{
+display:flex;
+flex-direction:column;
+}
+
+#project-form,
+#project-list{
+margin-bottom:20px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+button{
+background-color:#4caf50;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+button:hover{
+background-color:#45a049;
+}
+
+labe{
+font-weight:bold;
+margin-bottom:5px;
+}
+ </style>
+
+
+<body bgcolor="sky blue">
+<div id="app">
+ <header>
+<h1>FTTX project Tracker</h1>
+</header>
+<main>
+ <section id="project-form">
+<h2><create New project</h2>
+ <!--Form to create a new project-->
+<form id="new-project-form">
+  <label for="project-name">Project Name</label>
+   <input type="text" id="project-name" required>
+   <label for="project-description">Project description:</label> 
+   <textarea id="project-description" required></textarea>
+   <button type="submit">Create Project</button>
+  </form>
+</section>
+
+<section id="project-list">
+<h2>Project List</h2>
+<!-- Display the list of projects-->
+ <ol id="projects">
+ <li>mysterious</li>
+</ol>
+</section>
+</main></div>
+</body>
+</html>
+
+   
